@@ -4,6 +4,10 @@ let data = new Date();
     Cria um método construtor que está vazio
 
     Método está associado a um objeto, por isso "Date()" é um método de "new"
+    "New" cria um objeto
+    algumacoisa() é uma função ou método
+    Normalmente a função vem sozinha: parseInt('45')
+    método: document.write('a')
 */
 
 /*document.write(data);*/
