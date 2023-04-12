@@ -16,8 +16,7 @@ let fa1 = {
     "b2" : 70.0,
     "b3" : 20.5,
     "b4" : 50.0,
-    "mpteste" : (2*fa[0] + 2*fa[1] + 3*fa[2] + 3*fa[3])/10
+    "mp" : mp
 }
-fa1.push(mpteste);
-console.log(teste + fa1.mpteste);
-/*não sei se certo*/
+console.log(fa1);
+document.write(JSON.stringify(fa1))
