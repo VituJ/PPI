@@ -10,8 +10,9 @@ let soma = valor_1 + valor_2;
 carro1.push(nome_1);
 carro1.push(ano_1);
 carro1.push(valor_1);
-carro1.push(nome_2);
-carro1.push(ano_2);
-carro1.push(valor_2);
+carro2.push(nome_2);
+carro2.push(ano_2);
+carro2.push(valor_2);
+document.write(`<h2>Informações do carro 1: ${carro1} <br> Informações do carro 2: ${carro2}<h2>`);
 document.write(`<h2>O nome do carro 1 é ${nome_1}, o nome do carro 2 é ${nome_2} e a soma entre o preço dos dois é R$${soma}<h2>`);
 
