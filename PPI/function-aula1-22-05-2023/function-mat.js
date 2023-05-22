@@ -23,11 +23,10 @@ function par (n){
 }
 
 function fatorial (n){
-    let i = n;
     let fat = 1;
-    while (i >= 2){
+    while (n >= 2){
         fat = fat * i
-        i--
+        n--
     }
     return fat;
 }
