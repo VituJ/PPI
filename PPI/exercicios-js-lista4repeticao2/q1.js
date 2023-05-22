@@ -1,35 +1,17 @@
-let qtd_questoes = +prompt('Número de questões da prova:');
-let permitidos = ['A', 'B', 'C', 'D', 'E'];
-let gabarito = [];
-let respostas = [];
+let qtd_questoes = +prompt('Digite a quantidade de questões da prova: ');
+let gabarito = prompt ('Digite o gabarito da questão: ');
+let respostas = prompt ('Digite a sua resposta da questão: ');
 let acertos = 0;
 let i = 0;
-let j = 0
-
-if (qtd_questoes >= 1 && qtd_questoes <= 80){
+if (qtd_questoes == respostas.length && qtd_questoes == gabarito.length){
     while(i < qtd_questoes){
-        gabarito.push(prompt(`Gabarito da questão ${i+1}: `))
-        if (!permitidos.includes(gabarito[i])){
-            window.alert('Somente aceitas as letras A, B, C, D e E')
-            gabarito.pop();
-            i--;
+        if (gabarito[i] == respostas[i]){
+            acertos++;
         }
         i++;
     }
-    while (j < qtd_questoes){
-        respostas.push(prompt(`Resposta da questão ${j+1}: `));
-        if (!permitidos.includes(respostas[j])){
-            window.alert('Somente aceitas as letras A, B, C, D e E');
-            respostas.pop();
-            j--;
-        } else {
-            if (respostas[j] == gabarito[j]){
-                acertos++;
-            }
-        }
-        j++;
-    }
+    document.write(`<h2>A quantidade de acertos foi de ${acertos}</h2>`)
 } else{
-    window.alert('Número de questões permitidas: 1 a 80')
+    document.write(`<h2>Digite uma quantidade de respostas ou um gabarito que condiza com a quantidade de questões.</h2>`)
 }
-document.write(`<h2>Quantidade de acertos: ${acertos}</h2>`)
+

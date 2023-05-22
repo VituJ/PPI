@@ -23,4 +23,4 @@ document.write(`<h2>Resultado da votação:</h2>
 <p>Machado de Assis: ${M} votos</p>
 <p>Graciliano Ramos: ${G} votos</p>
 <p>Branco: ${B} votos</p>
-<p>Nulo: ${N} votos</p>`)
+<p>Nulo: ${N} votos</p>`);
