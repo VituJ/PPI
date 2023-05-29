@@ -8,7 +8,7 @@ if (Triangle(hp,c1,c2)){
     document.write('<p>É um triângulo</p>');
 } else{
     document.write('<p>Não é um triângulo</p>');
-}*/
+}
 
 
 if (par(2)){
@@ -18,4 +18,19 @@ if (par(2)){
 } 
 
 let n = +prompt('Número >= 0: ')
-document.write(`<p>O fatorial de ${n} é ${fatorial(n)}</p>`)
+document.write(`<p>O fatorial de ${n} é ${fatorial(n)}</p>`)*/
+
+/*console.log(primo(4))
+console.log(primo(8));
+console.log(primo(7));
+let l = [5, 3, 2, 1];
+multiplica(l, 3);
+console.log(l)*/
+
+//Usando jquery
+function calcular(){
+    let n = $('#num').val();
+    let res = fatorial(n);
+    let p = $('#res');
+    p.html(`O fatorial de ${n} é igual a ${res}`) //esse método 'html' é o mesmo que p.innerHTML = 'frase'
+}
