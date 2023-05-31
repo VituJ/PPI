@@ -29,8 +29,11 @@ console.log(l)*/
 
 //Usando jquery
 function calcular(){
-    let n = $('#num').val();
+    let n = document.getElementById('num').value;
+    //let n = $('#num').val();
     let res = fatorial(n);
-    let p = $('#res');
-    p.html(`O fatorial de ${n} é igual a ${res}`) //esse método 'html' é o mesmo que p.innerHTML = 'frase'
+    let p = document.getElementById('res');
+    //let p = $('#res');
+    p.innerHTML = `O fatorial de ${n} é igual a ${res}`
+    //p.html(`O fatorial de ${n} é igual a ${res}`) //esse método 'html' é o mesmo que p.innerHTML = 'frase'
 }

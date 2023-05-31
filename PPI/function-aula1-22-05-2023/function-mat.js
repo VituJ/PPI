@@ -65,3 +65,25 @@ function multiplica(lista, n){
         lista[i] *= n;
     }
 }
+
+function maximo(){
+    if (arguments.length > 0){
+        let maior = arguments[0];
+        for (let i =1; i < arguments.length; i++){
+            if (arguments[i] > maior){
+                maior = arguments[i];
+            }
+        }
+        return maior;
+    }
+    return Number.NEGATIVE_INFINITY;
+}
+
+function potencia (base , exp = 2){
+    let pot = 1;
+
+    for (let i = 0; i < exp; i++){
+        pot = base * pot;
+    }
+    return pot;
+}
