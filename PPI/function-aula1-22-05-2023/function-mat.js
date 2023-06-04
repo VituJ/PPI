@@ -33,26 +33,26 @@ function par(n) {
 function fatorial(n) {
     let fat = 1;
     while (n >= 2) {
-        fat = fat * i
-        n--
+        fat = fat * n;
+        n--;
     }
     return fat;
 }
 
 
-function primo(n){
-    if (n >= 2){
+function primo(n) {
+    if (n >= 2) {
         let ehPrimo = true;
 
         let i = 2;
-        while(i < n && ehPrimo){
-            if (n % i == 0){
+        while (i < n && ehPrimo) {
+            if (n % i == 0) {
                 ehPrimo = false;
             }
             i++;
         }
         return ehPrimo;
-    } else{
+    } else {
         return false;
     }
 }
