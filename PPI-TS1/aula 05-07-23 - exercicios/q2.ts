@@ -15,31 +15,39 @@ export class Contato {
 
     }
 
-    alterarNome(n: string): string {
-        if (n != '') {
-            this.nome = n;
-            return 'true';
-        } 
-        return 'false';
+    alterarNome(n: string) {
+        this.nome = n;;
     }
 
-    alterarEmail(n: string): string {
-        if (n != '') {
-            this.email = n;
-            return 'true';
-        } 
-        return 'false';
+    obterNome():string{
+        return this.nome;
     }
 
-    alterarFone(n: number): number {
-        if (n != 0) {
-            this.telefone = n;
-            return 2;
-        } 
-        return 3;
+    alterarEmail(n: string) {
+        this.email = n;
+    }
+
+    obterEmail():string{
+        return this.email;
+    }
+
+
+    alterarFone(n: number){
+        this.telefone = n;
+    }
+
+    obterFone():number{
+        return this.telefone;
     }
 
 }
 
-let email1 = new Contato('José', 'Araujo@gmail.com', 0);
-console.log(email1);
+let jose = new Contato('José', 'Araujo@gmail.com', 555555555);
+console.log(jose);
+jose.alterarFone(9876543);
+console.log(jose.obterFone());
+jose.alterarNome('Roberto');
+console.log(jose.obterNome());
+jose.alterarEmail('robertoeuclides@gmail.com');
+console.log(jose.obterEmail());
+console.log(jose)
